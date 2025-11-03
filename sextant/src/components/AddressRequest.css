@@ -1,0 +1,10 @@
+.ip-address {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.ip-error {
+    color: #ff8a80;
+    margin: 0;
+}

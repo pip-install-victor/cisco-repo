@@ -1,6 +1,7 @@
 import './App.css';
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
+import AddressRequest from './components/AddressRequest';
 
 function App() {
 	return (
@@ -13,14 +14,14 @@ function App() {
 			<p>Monitoring real-time data...</p>
 			</Exhibit>
 
-			<Exhibit title="Data Point Alpha">
-			<p>Value: 128.5</p>
+			<Exhibit title="Public IPv4 Address">
+			<AddressRequest ipVersion="v4" />
 			</Exhibit>
 
-			<Exhibit title="Data Point Bravo">
-			<p>Value: 72.1</p>
-			</Exhibit>
-		</main>
+			<Exhibit title="Public IPv6 Address">
+			<AddressRequest ipVersion="v6" />
+			</Exhibit>			
+		</main>		
 		</div>
 	);
 }
