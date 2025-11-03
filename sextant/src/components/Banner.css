@@ -1,0 +1,33 @@
+.banner {
+    background-color: var(--deep-indigo);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-title {
+    margin: 0;
+    color: var(--parchment);
+    font-size: 1.5rem;
+}
+
+.banner-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.banner-nav a {
+    color: var(--parchment);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.banner-nav a:hover {
+    color: var(--bright-sky-blue);
+}

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './components/Banner';
+import Exhibit from './components/Exhibit';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+		<Banner />
+
+		<main className="dashboard-grid">
+			<Exhibit title="System Status">
+			<p>All systems operational.</p>
+			<p>Monitoring real-time data...</p>
+			</Exhibit>
+
+			<Exhibit title="Data Point Alpha">
+			<p>Value: 128.5</p>
+			</Exhibit>
+
+			<Exhibit title="Data Point Bravo">
+			<p>Value: 72.1</p>
+			</Exhibit>
+		</main>
+		</div>
+	);
 }
 
 export default App;
